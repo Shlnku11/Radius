@@ -1,1 +1,339 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141716">
+  <meta name="description" content="РАДИУС — шинный сервис и вулканизация. Шиномонтаж, балансировка и ремонт шин с понятной стоимостью до начала работ.">
+  <title>РАДИУС — шинный сервис без лишнего</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
 
+  <div class="topline" id="page-start">
+    <div class="container topline__inner">
+      <span><i class="status-dot" aria-hidden="true"></i> Шинный сервис полного цикла</span>
+      <span class="topline__right">Бережно к колёсам. Честно к вам.</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#page-start" aria-label="Радиус — на главную">
+        <span class="brand__mark" aria-hidden="true"><span></span></span>
+        <span class="brand__text">РАДИУС<span>ШИННЫЙ СЕРВИС</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#approach">О сервисе</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <button class="button button--small button--outline header__cta" type="button" data-open-booking>
+        Записаться <span class="button__arrow" aria-hidden="true">↗</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="wheel-nav" aria-label="Быстрая навигация по странице">
+    <span class="wheel-nav__track" aria-hidden="true"><span id="wheel-nav-progress"></span></span>
+    <a class="wheel-nav__link is-active" href="#page-start" data-wheel-link aria-label="К началу страницы" aria-current="location"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">Начало</span></a>
+    <a class="wheel-nav__link" href="#services" data-wheel-link aria-label="К услугам"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">Услуги</span></a>
+    <a class="wheel-nav__link" href="#approach" data-wheel-link aria-label="К подходу"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">О сервисе</span></a>
+    <a class="wheel-nav__link" href="#steps" data-wheel-link aria-label="К этапам работы"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">Этапы</span></a>
+    <a class="wheel-nav__link" href="#pricing" data-wheel-link aria-label="К ценам"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">Цены</span></a>
+    <a class="wheel-nav__link" href="#faq" data-wheel-link aria-label="К ответам на вопросы"><span class="mini-wheel" aria-hidden="true"><i></i></span><span class="wheel-nav__label">Вопросы</span></a>
+  </nav>
+
+  <main id="main">
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <div class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> ТОЧНОСТЬ В КАЖДОМ ОБОРОТЕ</div>
+          <h1 id="hero-title">Шиномонтаж,<br>после которого<br><em>спокойно.</em></h1>
+          <p class="hero__lead">Вулканизация, балансировка и ремонт колёс — аккуратно, по делу и с понятной ценой до начала работ.</p>
+          <div class="hero__actions">
+            <button class="button button--accent" type="button" data-open-booking>Записаться на сервис <span class="button__arrow" aria-hidden="true">↗</span></button>
+            <a class="text-link text-link--light" href="#services">Смотреть услуги <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero__proof">
+            <div class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.2 19 6v5.4c0 4.2-2.7 7.7-7 9.5-4.3-1.8-7-5.3-7-9.5V6l7-2.8Z"/><path d="m8.7 12 2.1 2.1 4.6-4.6"/></svg></div>
+            <p><strong>Никаких сюрпризов</strong><span>Сначала осмотр и согласование — потом работа.</span></p>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Иллюстрация автомобильного колеса">
+          <div class="hero__halo" aria-hidden="true"></div>
+          <div class="hero__orbit hero__orbit--one" aria-hidden="true"></div>
+          <div class="hero__orbit hero__orbit--two" aria-hidden="true"></div>
+          <div class="wheel-wrap">
+            <svg class="wheel" viewBox="0 0 640 640" role="img" aria-label="Детализированное колесо с литым диском">
+              <defs>
+                <radialGradient id="tire" cx="42%" cy="35%" r="68%"><stop offset="0" stop-color="#515755"/><stop offset=".42" stop-color="#272c2a"/><stop offset=".78" stop-color="#101312"/><stop offset="1" stop-color="#050606"/></radialGradient>
+                <radialGradient id="rim" cx="38%" cy="28%" r="80%"><stop offset="0" stop-color="#d5d7d2"/><stop offset=".22" stop-color="#929a96"/><stop offset=".49" stop-color="#454c49"/><stop offset=".72" stop-color="#171b19"/><stop offset="1" stop-color="#050606"/></radialGradient>
+                <linearGradient id="spoke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9dcd6"/><stop offset=".44" stop-color="#727a76"/><stop offset="1" stop-color="#2c3230"/></linearGradient>
+                <filter id="wheel-shadow" x="-35%" y="-35%" width="170%" height="170%"><feGaussianBlur stdDeviation="12"/></filter>
+                <pattern id="tread" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><rect width="34" height="34" fill="url(#tire)"/><path d="M3 0v34M18 0v34M29 0v34" stroke="#717875" stroke-opacity=".18" stroke-width="5"/><path d="M0 8h9m10 17h12" stroke="#080a09" stroke-opacity=".72" stroke-width="4"/></pattern>
+              </defs>
+              <ellipse cx="336" cy="558" rx="206" ry="26" fill="#000" opacity=".52" filter="url(#wheel-shadow)"/>
+              <g transform="rotate(-12 320 320)">
+                <circle cx="320" cy="320" r="267" fill="#080a09" stroke="#555b58" stroke-width="3"/>
+                <circle cx="320" cy="320" r="255" fill="url(#tread)" stroke="#0a0c0b" stroke-width="8"/>
+                <circle cx="320" cy="320" r="220" fill="url(#tire)" stroke="#5c625f" stroke-opacity=".45" stroke-width="2"/>
+                <circle cx="320" cy="320" r="199" fill="#121615" stroke="#747b77" stroke-opacity=".55" stroke-width="3"/>
+                <circle cx="320" cy="320" r="183" fill="url(#rim)" stroke="#d2d5d0" stroke-opacity=".52" stroke-width="2"/>
+                <g fill="url(#spoke)" stroke="#161a18" stroke-width="4">
+                  <path d="M303 143h34l14 134-20 25-24-25z"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(45 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(90 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(135 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(180 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(225 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(270 320 320)"/>
+                  <path d="M303 143h34l14 134-20 25-24-25z" transform="rotate(315 320 320)"/>
+                </g>
+                <circle cx="320" cy="320" r="91" fill="#171c1a" stroke="#bbc0bb" stroke-width="4"/>
+                <circle cx="320" cy="320" r="72" fill="url(#rim)" stroke="#343a37" stroke-width="3"/>
+                <circle cx="320" cy="320" r="48" fill="#181d1b" stroke="#a5aaa6" stroke-opacity=".66" stroke-width="2"/>
+                <path d="M320 286a34 34 0 1 0 0 68 34 34 0 0 0 0-68Zm0 13a21 21 0 1 1 0 42 21 21 0 0 1 0-42Z" fill="#ff6036"/>
+                <g fill="#161a18" stroke="#c8ccc7" stroke-width="2">
+                  <circle cx="320" cy="263" r="7"/><circle cx="374" cy="303" r="7"/><circle cx="353" cy="367" r="7"/><circle cx="287" cy="367" r="7"/><circle cx="266" cy="303" r="7"/>
+                </g>
+                <circle cx="320" cy="320" r="201" fill="none" stroke="#eff1ec" stroke-opacity=".14" stroke-width="2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="floating-card floating-card--top"><span class="floating-card__icon" aria-hidden="true">↗</span><span><strong>Точная балансировка</strong><small>Комфорт на любой скорости</small></span></div>
+          <div class="floating-card floating-card--bottom"><span class="floating-card__number">360°</span><span><strong>Забота о колёсах</strong><small>От осмотра до последнего болта</small></span></div>
+          <span class="hero__index" aria-hidden="true">01 / 04</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#services"><span class="scroll-cue__line"></span> ПРОКРУТИТЕ ВНИЗ</a>
+    </section>
+
+    <div class="ticker" aria-label="Шиномонтаж, вулканизация, балансировка и ремонт шин">
+      <div class="ticker__track" aria-hidden="true">
+        <div class="ticker__group">
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+        </div>
+        <div class="ticker__group" aria-hidden="true">
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+          <span>ШИНОМОНТАЖ</span><b>✳</b><span>ВУЛКАНИЗАЦИЯ</span><b>✳</b><span>БАЛАНСИРОВКА</span><b>✳</b><span>РЕМОНТ ШИН</span><b>✳</b>
+        </div>
+      </div>
+    </div>
+
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow__line"></span> ЧТО МЫ ДЕЛАЕМ</div>
+            <h2 id="services-title">Всё, что нужно<br>для <em>уверенного</em> пути.</h2>
+          </div>
+          <p class="section-heading__aside">От сезонной смены до ремонта сложного повреждения. Подберём нужную услугу и заранее объясним, что будем делать.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card service-card--featured reveal">
+            <span class="service-card__number">01</span>
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11.5"/><circle cx="16" cy="16" r="4.5"/><path d="M16 4.5v7m0 9v7m11.5-11.5h-7m-9 0h-7M8 8l5 5m6 6 5 5m0-16-5 5m-6 6-5 5"/></svg></div>
+            <h3>Шиномонтаж</h3>
+            <p>Снимем и установим шины, проверим состояние дисков и вентилей.</p>
+            <a href="#pricing" class="service-card__link" aria-label="Посмотреть стоимость шиномонтажа">Подробнее <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">02</span>
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m18.7 3.8-13 15h9l-1.4 9.4 13-15h-9l1.4-9.4Z"/><path d="m18.7 3.8-13 15h9l-1.4 9.4 13-15h-9l1.4-9.4Z"/></svg></div>
+            <h3>Вулканизация</h3>
+            <p>Восстановим повреждённую шину с учётом места и характера прокола.</p>
+            <a href="#pricing" class="service-card__link" aria-label="Посмотреть стоимость вулканизации">Подробнее <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">03</span>
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="4"/><path d="M16 5v7m0 8v7m11-11h-7m-8 0H5m3.2-7.8 5 5m5.6 5.6 5 5m0-15.6-5 5m-5.6 5.6-5 5"/><path d="M23.5 7.5 26 5m-1.5 8H28"/></svg></div>
+            <h3>Балансировка</h3>
+            <p>Устраним биение и вибрации, чтобы поездка оставалась плавной.</p>
+            <a href="#pricing" class="service-card__link" aria-label="Посмотреть стоимость балансировки">Подробнее <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">04</span>
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 20.5 8 13a3 3 0 0 1 2.9-2.2h10.2A3 3 0 0 1 24 13l2 7.5M5 20.5h22v5H5z"/><path d="M8.5 20.5v-4h15v4M8 25.5v2m16-2v2M9 14h14"/></svg></div>
+            <h3>Ремонт проколов</h3>
+            <p>Найдём место утечки и предложим надёжный способ ремонта.</p>
+            <a href="#pricing" class="service-card__link" aria-label="Посмотреть стоимость ремонта проколов">Подробнее <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-card__number">05</span>
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 17.5h24M7 17.5l2-7h14l2 7M7 17.5l1.5 6h15l1.5-6M10 23.5v2m12-2v2"/><path d="M12 10.5V7m8 3.5V7"/><circle cx="10" cy="18" r="1"/><circle cx="22" cy="18" r="1"/></svg></div>
+            <h3>Правка дисков</h3>
+            <p>Проверим геометрию диска и восстановим форму, если это безопасно.</p>
+            <a href="#pricing" class="service-card__link" aria-label="Узнать о правке дисков">Подробнее <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-card service-card--dark reveal">
+            <span class="service-card__number">06</span>
+            <div class="service-icon service-icon--accent" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4v24M4 16h24M7.5 7.5l17 17m0-17-17 17"/><circle cx="16" cy="16" r="10.5"/></svg></div>
+            <h3>Сезонная смена</h3>
+            <p>Переобуем комплект и подскажем, на что обратить внимание.</p>
+            <button class="service-card__link" type="button" data-open-booking>Записаться <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section-dark" id="approach" aria-labelledby="approach-title">
+      <div class="approach__texture" aria-hidden="true"></div>
+      <div class="container approach__inner">
+        <div class="approach__visual reveal" aria-hidden="true">
+          <div class="approach__photo-frame">
+            <div class="approach__photo-shape">
+              <div class="approach__rim"></div>
+              <div class="approach__light"></div>
+            </div>
+          </div>
+          <span class="approach__caption">РАБОТАЕМ ТОЧНО. ОТНОСИМСЯ БЕРЕЖНО.</span>
+          <span class="approach__stamp">R<br><small>— 01 —</small></span>
+        </div>
+        <div class="approach__copy reveal">
+          <div class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> НАШ ПОДХОД</div>
+          <h2 id="approach-title">Хороший сервис<br>виден <em>в деталях.</em></h2>
+          <p class="approach__lead">Колесо — единственная точка контакта автомобиля с дорогой. Мы работаем внимательно, объясняем простыми словами и не добавляем к заказу лишнего.</p>
+          <div class="promise-list">
+            <div class="promise"><span class="promise__check" aria-hidden="true">✓</span><p><strong>Согласуем до начала</strong><small>Расскажем, что нашли и сколько это будет стоить.</small></p></div>
+            <div class="promise"><span class="promise__check" aria-hidden="true">✓</span><p><strong>Работаем аккуратно</strong><small>Бережно обращаемся с шинами, дисками и крепежом.</small></p></div>
+            <div class="promise"><span class="promise__check" aria-hidden="true">✓</span><p><strong>Проверяем результат</strong><small>После работ ещё раз убеждаемся, что всё в порядке.</small></p></div>
+          </div>
+          <a class="text-link text-link--light approach__link" href="#steps">Как проходит визит <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <div class="eyebrow"><span class="eyebrow__line"></span> БЕЗ НЕОЖИДАННОСТЕЙ</div>
+          <h2 id="steps-title">От звонка до <em>готового пути.</em></h2>
+          <p>Всё просто: вы знаете, что происходит с автомобилем на каждом этапе.</p>
+        </div>
+        <div class="steps-row">
+          <article class="step-card reveal"><span class="step-card__num">01</span><div class="step-card__icon" aria-hidden="true">↗</div><h3>Выбираем время</h3><p>Оставьте заявку — согласуем удобный слот и уточним задачу.</p></article>
+          <span class="step-connector" aria-hidden="true"></span>
+          <article class="step-card reveal"><span class="step-card__num">02</span><div class="step-card__icon" aria-hidden="true">◉</div><h3>Осматриваем колёса</h3><p>Проверим шины и диски, объясним возможные варианты.</p></article>
+          <span class="step-connector" aria-hidden="true"></span>
+          <article class="step-card reveal"><span class="step-card__num">03</span><div class="step-card__icon" aria-hidden="true">✓</div><h3>Согласуем работу</h3><p>Подтвердим объём и стоимость — приступим только с вашего согласия.</p></article>
+          <span class="step-connector" aria-hidden="true"></span>
+          <article class="step-card reveal"><span class="step-card__num">04</span><div class="step-card__icon" aria-hidden="true">↗</div><h3>Вы снова в пути</h3><p>Проверим результат и передадим автомобиль вам.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section-warm" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow__line"></span> ПОНЯТНАЯ СТОИМОСТЬ</div>
+            <h2 id="pricing-title">Сначала цена.<br>Потом <em>работа.</em></h2>
+          </div>
+          <p class="section-heading__aside">Итог зависит от диаметра колеса и характера повреждения. Покажем стоимость до начала работ — и не изменим её без согласования.</p>
+        </div>
+        <div class="price-controls reveal">
+          <span>Автомобиль:</span>
+          <div class="segmented" role="group" aria-label="Выберите тип автомобиля">
+            <button class="segmented__button is-active" type="button" data-vehicle="sedan" aria-pressed="true">Легковой</button>
+            <button class="segmented__button" type="button" data-vehicle="suv" aria-pressed="false">Кроссовер / SUV</button>
+          </div>
+        </div>
+        <div class="price-grid">
+          <article class="price-card reveal"><span class="price-card__label">СЕЗОН</span><h3>Смена колёс</h3><p>Демонтаж и установка готового комплекта.</p><div class="price-card__bottom"><span class="price-value" data-price="wheel-change">от 850 <small>сом</small></span><button class="price-card__action" type="button" data-open-booking aria-label="Записаться на смену колёс">↗</button></div></article>
+          <article class="price-card price-card--featured reveal"><span class="price-card__label">КОМПЛЕКС</span><h3>Шиномонтаж</h3><p>Снять, смонтировать и отбалансировать комплект.</p><div class="price-card__bottom"><span class="price-value" data-price="mounting">от 1 600 <small>сом</small></span><button class="price-card__action" type="button" data-open-booking aria-label="Записаться на шиномонтаж">↗</button></div></article>
+          <article class="price-card reveal"><span class="price-card__label">РЕМОНТ</span><h3>Устранение прокола</h3><p>Осмотр, поиск утечки и ремонт по состоянию шины.</p><div class="price-card__bottom"><span class="price-value" data-price="puncture">от 500 <small>сом</small></span><button class="price-card__action" type="button" data-open-booking aria-label="Записаться на ремонт прокола">↗</button></div></article>
+        </div>
+        <p class="price-note"><span aria-hidden="true">ⓘ</span> Цены в макете — пример. Перед публикацией замените их на актуальный прайс вашей мастерской.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__inner">
+        <div class="faq__intro reveal">
+          <div class="eyebrow"><span class="eyebrow__line"></span> ЕСТЬ ВОПРОС?</div>
+          <h2 id="faq-title">Лучше знать<br><em>заранее.</em></h2>
+          <p>Не нашли ответ? Оставьте заявку — обсудим вашу ситуацию.</p>
+          <button class="button button--dark" type="button" data-open-booking>Задать вопрос <span class="button__arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal" open><summary><span>Сколько времени занимает шиномонтаж?</span><span class="faq-item__plus" aria-hidden="true"></span></summary><p>Время зависит от типа колёс, объёма работ и очереди. При записи подскажем актуальный интервал.</p></details>
+          <details class="faq-item reveal"><summary><span>Можно ли приехать без записи?</span><span class="faq-item__plus" aria-hidden="true"></span></summary><p>Можно, но предварительная запись поможет выбрать удобное время и сократить ожидание.</p></details>
+          <details class="faq-item reveal"><summary><span>Что делать, если колесо спускает?</span><span class="faq-item__plus" aria-hidden="true"></span></summary><p>Не продолжайте движение на спущенном колесе: это может повредить шину и диск. По возможности установите запаску и запишитесь на диагностику.</p></details>
+          <details class="faq-item reveal"><summary><span>Как узнать точную цену заранее?</span><span class="faq-item__plus" aria-hidden="true"></span></summary><p>Сообщите размер колёс и нужную услугу при записи. После осмотра мастер подтвердит итоговую стоимость до начала работ.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-dark" id="order" aria-labelledby="cta-title">
+      <img class="final-cta__photo" src="https://images.unsplash.com/photo-1753496065273-9637a3788b48?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=82&amp;w=1600" alt="" loading="lazy" decoding="async">
+      <div class="final-cta__photo-shade" aria-hidden="true"></div>
+      <div class="final-cta__rings" aria-hidden="true"></div>
+      <div class="container final-cta__inner reveal">
+        <div class="eyebrow eyebrow--light"><span class="eyebrow__line"></span> ВАШ СЛЕДУЮЩИЙ ШАГ</div>
+        <h2 id="cta-title">Пусть дорога<br>будет <em>ровной.</em></h2>
+        <p>Расскажите, что случилось с колесом — подскажем, с чего начать.</p>
+        <button class="button button--accent" type="button" data-open-booking>Записаться на сервис <span class="button__arrow" aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__main">
+      <div class="footer__brand-col">
+        <a class="brand brand--footer" href="#page-start" aria-label="Радиус — наверх">
+          <span class="brand__mark" aria-hidden="true"><span></span></span>
+          <span class="brand__text">РАДИУС<span>ШИННЫЙ СЕРВИС</span></span>
+        </a>
+        <p>Забота о колёсах,<br>которую чувствуешь в пути.</p>
+      </div>
+      <div class="footer__links"><span class="footer__label">НАВИГАЦИЯ</span><a href="#services">Услуги</a><a href="#approach">О сервисе</a><a href="#pricing">Цены</a><a href="#faq">Вопросы</a></div>
+      <div class="footer__links"><span class="footer__label">ЗАПИСЬ</span><button type="button" data-open-booking>Оставить заявку <span aria-hidden="true">↗</span></button><span class="footer__hint">Оставьте заявку — уточним<br>удобное время и детали визита.</span></div>
+      <div class="footer__contact"><span class="footer__label">МЫ НА СВЯЗИ</span><span class="footer__availability"><i class="status-dot" aria-hidden="true"></i> По предварительной записи</span><p>Ответим на вопросы и поможем<br>подобрать подходящее время.</p><button type="button" class="footer__contact-link" data-open-booking>Записаться на визит <span aria-hidden="true">↗</span></button></div>
+    </div>
+    <div class="container footer__bottom"><span>© <span id="current-year">2026</span> РАДИУС. ШИННЫЙ СЕРВИС.</span><a href="#page-start">НАВЕРХ ↑</a><span>ЕЗДИТЕ СПОКОЙНО.</span></div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Быстрая запись"><span>Нужно помочь с колесом?</span><button class="button button--accent button--small" type="button" data-open-booking>Записаться <span aria-hidden="true">↗</span></button></div>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+    <div class="booking-dialog__inner">
+      <button class="dialog-close" type="button" aria-label="Закрыть форму">×</button>
+      <div class="eyebrow"><span class="eyebrow__line"></span> РАДИУС · ЗАПИСЬ</div>
+      <h2 id="booking-title">Расскажите,<br>что <em>нужно сделать.</em></h2>
+      <p class="booking-dialog__lead">Оставьте контакты — мы уточним детали и подберём время.</p>
+      <form class="booking-form" id="booking-form">
+        <label>Ваше имя<input name="name" autocomplete="name" placeholder="Например, Алексей" required minlength="2"></label>
+        <label>Телефон для связи<input name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+() -]{7,}" title="Введите номер, используя цифры, пробелы, скобки или дефис" placeholder="+996 ___ ___ ___" required minlength="7"></label>
+        <label>Что случилось?
+          <select name="service" required>
+            <option value="" selected disabled>Выберите услугу</option>
+            <option>Шиномонтаж</option><option>Вулканизация</option><option>Балансировка</option><option>Ремонт прокола</option><option>Другое</option>
+          </select>
+        </label>
+        <button class="button button--accent booking-form__submit" type="submit">Отправить заявку <span class="button__arrow" aria-hidden="true">↗</span></button>
+        <p class="booking-form__note">Нажимая кнопку, вы соглашаетесь на связь по указанному номеру. Для реального приёма заявок подключите форму к телефону, почте или CRM.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </dialog>
+
+</body>
+</html>
